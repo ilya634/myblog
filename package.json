@@ -6,7 +6,6 @@
     "build": "next build",
     "start": "next start",
     "dev": "next dev",
-    "prisma:generate": "prisma generate",
     "lint": "next lint"
   },
   "dependencies": {
