@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
-const PostCard = ({ post }) => {
+export default function PostCard ({ post }) {
   return (
     <div className={styles['post-card']}>
       <h2>
@@ -12,4 +12,3 @@ const PostCard = ({ post }) => {
     </div>
   );
 };
-export default PostCard;

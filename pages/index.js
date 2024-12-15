@@ -1,5 +1,6 @@
 // pages/index.js
 import prisma from '../lib/prisma';
+import { connection } from 'next/server'
 import { useState } from 'react';
 import PostList from '../components/PostList';
 import SearchBar from '../components/SearchBar';
@@ -66,6 +67,11 @@ export default function Home({ posts }) {
       <PostList posts={filteredPosts} />
     </div>
   );
+}
+
+export async function Component() {
+  await connection()
+  const value = process.env.NODE_ENV
 }
 
 export async function getStaticProps() {

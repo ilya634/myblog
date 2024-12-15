@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
 
-const SearchBar = ({ onSearch }) => {
+export default function SearchBar ({ onSearch }) {
   const [query, setQuery] = useState('');
 
   const handleSearch = (e) => {
@@ -24,5 +24,3 @@ const SearchBar = ({ onSearch }) => {
     </div>
   );
 };
-
-export default SearchBar;

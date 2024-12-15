@@ -2,7 +2,7 @@
 import PostCard from './PostCard';
 import styles from '../styles/Home.module.css';
 
-const PostList = ({ posts }) => {
+export default function PostList ({ posts }) {
   return (
     <div className={styles['post-list']}>
       {posts.map((post) => (
@@ -11,5 +11,3 @@ const PostList = ({ posts }) => {
     </div>
   );
 };
-
-export default PostList;
